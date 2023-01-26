@@ -1,6 +1,7 @@
 <mat-toolbar class="px-header">
-  <div>
-    <button
+  <div class="px-header-button-title">
+    <div >
+      <button
       mat-icon-button
       class="example-icon"
       aria-label="Example icon-button with menu icon"
@@ -22,7 +23,17 @@
         <span>Notificações</span>
       </button>
     </mat-menu>
-    <span class="px-title-header">[Project X]  Mercado Financeiro</span>
+    </div>
+
+    <div class="px-header-container-title">
+      <span class="px-title-header">Fundos Federais EUA </span>
+      <span class="px-price-our-today">Preço do outro atualmente</span>
+      <div class="px-price-our-today">
+        <span>{{currentPrice}}</span>
+        <span>{{dateOurPrice}}</span>
+      </div>
+    </div>
+
   </div>
 
   <div class="px-header-icons-right">
@@ -43,3 +54,4 @@
   </div>
 </mat-toolbar>
 <app-table></app-table>
+<corp-video-player [videoId]="currentVideoId"></corp-video-player>

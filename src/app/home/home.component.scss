@@ -1,8 +1,18 @@
 .px-header {
   justify-content: space-between;
 }
+
+.px-header-button-title {
+  display: flex;
+  flex-direction: row;
+}
 .example-spacer {
   flex: 1 1 auto;
+}
+.px-header-container-title {
+  display: flex;
+  justify-content: space-between;
+  width: 450px;
 }
 
 .px-title-header {
@@ -13,4 +23,15 @@
   display: flex;
   width: 90px;
   justify-content: space-between;
+}
+
+.px-price-our-today {
+  padding-left: 10px;
+  font-size: small;
+  color: yellow;
+  span {
+    display: flex;
+    flex-direction: column;
+    height: 15px;
+  }
 }
