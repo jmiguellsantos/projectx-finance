@@ -12,16 +12,6 @@ export class HomeComponent implements OnInit {
   currentPrice: any;
   dateOurPrice: any;
   exangesRates: any;
-  link: any;
-
-  videoList: Video[] = [
-    {
-      title: 'Live Bitcoin & Ethereum Signals | ETH | BTC | USDT - Live Streaming',
-      link: 'https://www.youtube.com/watch?v=ooje-K0G5t4'
-    }
-  ]
-  currentVideoId: string
-
 
   constructor(private service: DailyPricesService) {}
 
@@ -30,11 +20,5 @@ export class HomeComponent implements OnInit {
       this.currentPrice = response[0].cena
       this.dateOurPrice = response[0].data
     })
-  }
-
-  selectVideo(video: Video) {
-    const params = new URL(video.link).searchParams;
-    this.currentVideoId = params.get('v');
-    console.log('id', this.currentVideoId);
   }
 }

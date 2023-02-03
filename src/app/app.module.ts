@@ -12,11 +12,9 @@ import { MatTableModule } from '@angular/material/table';
 import { TableComponent } from './table/table.component';
 import {MatMenuModule} from '@angular/material/menu';
 import { HttpClientModule } from '@angular/common/http';
-import { YouTubePlayerModule } from '@angular/youtube-player';
-import { VideoPlayerComponent } from './video-player/video-player.component';
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, TableComponent, VideoPlayerComponent],
+  declarations: [AppComponent, HomeComponent, TableComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -27,7 +25,6 @@ import { VideoPlayerComponent } from './video-player/video-player.component';
     MatTableModule,
     MatMenuModule,
     HttpClientModule,
-    YouTubePlayerModule
   ],
   providers: [],
   bootstrap: [AppComponent],
