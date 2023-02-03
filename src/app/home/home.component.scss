@@ -35,3 +35,10 @@
     height: 15px;
   }
 }
+.px-elements-page {
+  display: flex;
+  flex-direction: row;
+  app-table {
+    width: 60%;
+  }
+}

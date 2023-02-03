@@ -1,81 +1,60 @@
 <mat-toolbar class="px-header">
-  <div class="px-header-button-title">
-    <div >
-      <button
-      mat-icon-button
-      class="example-icon"
-      aria-label="Example icon-button with menu icon"
-      [matMenuTriggerFor]="menu"
-    >
-      <mat-icon>menu</mat-icon>
-    </button>
-    <mat-menu #menu="matMenu">
-      <button mat-menu-item>
-        <mat-icon>dialpad</mat-icon>
-        <span>Informações da moeda</span>
+    <div class="px-header-button-title">
+      <div >
+        <button
+        mat-icon-button
+        class="example-icon"
+        aria-label="Example icon-button with menu icon"
+        [matMenuTriggerFor]="menu"
+      >
+        <mat-icon>menu</mat-icon>
       </button>
-      <button mat-menu-item disabled>
-        <mat-icon>voicemail</mat-icon>
-        <span>Gráficos</span>
-      </button>
-      <button mat-menu-item>
-        <mat-icon>notifications_off</mat-icon>
-        <span>Notificações</span>
-      </button>
-    </mat-menu>
-    </div>
-
-    <div class="px-header-container-title">
-      <span class="px-title-header">Fundos Federais EUA </span>
-      <span class="px-price-our-today">Preço do outro atualmente</span>
-      <div class="px-price-our-today">
-        <span>{{currentPrice}}</span>
-        <span>{{dateOurPrice}}</span>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item>
+          <mat-icon>dialpad</mat-icon>
+          <span>Informações da moeda</span>
+        </button>
+        <button mat-menu-item disabled>
+          <mat-icon>voicemail</mat-icon>
+          <span>Gráficos</span>
+        </button>
+        <button mat-menu-item>
+          <mat-icon>notifications_off</mat-icon>
+          <span>Notificações</span>
+        </button>
+      </mat-menu>
       </div>
+
+      <div class="px-header-container-title">
+        <span class="px-title-header">Fundos Federais EUA </span>
+        <span class="px-price-our-today">Preço do outro atualmente</span>
+        <div class="px-price-our-today">
+          <span>{{currentPrice}}</span>
+          <span>{{dateOurPrice}}</span>
+        </div>
+      </div>
+
     </div>
 
-  </div>
+    <div class="px-header-icons-right">
+      <button
+        mat-icon-button
+        class="example-icon favorite-icon"
+        aria-label="Example icon-button with heart icon"
+      >
+        <mat-icon>favorite</mat-icon>
+      </button>
+      <button
+        mat-icon-button
+        class="example-icon"
+        aria-label="Example icon-button with share icon"
+      >
+        <mat-icon>share</mat-icon>
+      </button>
+    </div>
+  </mat-toolbar>
 
-  <div class="px-header-icons-right">
-    <button
-      mat-icon-button
-      class="example-icon favorite-icon"
-      aria-label="Example icon-button with heart icon"
-    >
-      <mat-icon>favorite</mat-icon>
-    </button>
-    <button
-      mat-icon-button
-      class="example-icon"
-      aria-label="Example icon-button with share icon"
-    >
-      <mat-icon>share</mat-icon>
-    </button>
+  <div class="px-elements-page ">
+    <app-table></app-table>
+    <ng-carousel></ng-carousel>
   </div>
-</mat-toolbar>
-<app-table></app-table>
-<div id="carouselExample" class="carousel slide">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="..." class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="..." class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="..." class="d-block w-100" alt="...">
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
-
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-<link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
