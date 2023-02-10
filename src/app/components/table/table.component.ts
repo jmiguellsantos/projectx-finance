@@ -1,6 +1,6 @@
 import { AfterViewInit, Component, OnInit } from '@angular/core';
 import { MatTableDataSource } from '@angular/material';
-import { DailyPricesService } from 'src/services/px-dailyprices.service';
+import { DailyPricesService } from 'src/app/services/px-dailyprices.service';
 
 export interface PeriodicElement {
   rates: any;

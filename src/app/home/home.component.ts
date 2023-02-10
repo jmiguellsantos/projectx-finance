@@ -1,6 +1,6 @@
 import { Video } from './../../utils/model-video';
 import { Component, OnInit } from '@angular/core';
-import { DailyPricesService } from 'src/services/px-dailyprices.service';
+import { DailyPricesService } from 'src/app/services/px-dailyprices.service';
 
 @Component({
   selector: 'app-home',
