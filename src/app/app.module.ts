@@ -14,7 +14,7 @@ import { TableComponent } from './components/table/table.component';
 import {MatMenuModule} from '@angular/material/menu';
 import { HttpClientModule } from '@angular/common/http';
 import { NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
-import { GraphicComponent } from './graphic/graphic.component';
+import { GraphicComponent } from './components/graphic/graphic.component';
 import { NgChartsModule } from 'ng2-charts';
 import { NgChartsConfiguration } from 'ng2-charts/public_api';
 
